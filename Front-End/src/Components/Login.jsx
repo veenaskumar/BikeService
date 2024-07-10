@@ -21,7 +21,7 @@ const Login = () => {
         .then((res) => res.json())
         .then((result) => {
           if (result.status === "ok") {
-            if (uname === "venaskumar812@gmail.com") {
+            if (uname === "vibeeshnataraj1@gmail.com") {
               toast.success("Admin Login");
               sessionStorage.setItem("role", "admin");
               sessionStorage.setItem("token",result.token);

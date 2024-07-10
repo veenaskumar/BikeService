@@ -10,8 +10,9 @@ const AddBookingScehma = new mongoose.Schema({
         address: String,
         status: String,
         service: [String],
-    },  { collection: "AddBooking", } );
-mongoose.model("AddBooking", AddBookingScehma);
+    });
+const CBooking = mongoose.model("AddBooking", AddBookingScehma);
+module.exports= {CBooking}
 
 
 //Samlpe Data 

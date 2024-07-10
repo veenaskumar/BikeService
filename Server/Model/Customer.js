@@ -8,7 +8,7 @@ const CustDetailsSchema = new mongoose.Schema({
 });
 
 const User = mongoose.model("user", CustDetailsSchema);
-module.exports = User;
+module.exports = {User};
 
 //Samlpe Data
 /*

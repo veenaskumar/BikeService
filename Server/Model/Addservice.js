@@ -5,7 +5,8 @@ const AddServiceScehma = new mongoose.Schema({
         sdesc: String,
         samount: String,
     },  { collection: "AddService", } );
-mongoose.model("AddService", AddServiceScehma);
+const AService=mongoose.model("AddService", AddServiceScehma);
+module.exports = {AService}
 
 //Samlpe Data 
 /*

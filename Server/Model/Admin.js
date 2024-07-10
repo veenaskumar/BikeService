@@ -6,9 +6,10 @@ const AdminDetailsScehma = new mongoose.Schema({
         noofbook:Number,
         pass: String,
         role: String,
-    },
-    { collection: "AdminInfo", } );
-mongoose.model("AdminInfo", AdminDetailsScehma);
+});
+
+const Admin=mongoose.model("AdminInfo", AdminDetailsScehma);
+module.exports = {Admin}
 
 //Samlpe Data 
 /*
